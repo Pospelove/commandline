@@ -22,3 +22,4 @@ if(BUILD_EXAMPLES)
     target_link_libraries(test commandline)
 endif()
 
+install(TARGETS commandline)
