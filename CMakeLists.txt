@@ -44,3 +44,5 @@ if(BUILD_EXAMPLES)
     set_property(DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT commandline_test)
 endif()
 
+set_target_properties(commandline PROPERTIES PUBLIC_HEADER "commandline.h")
+install(TARGETS commandline RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib PUBLIC_HEADER DESTINATION include)
