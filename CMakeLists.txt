@@ -44,3 +44,4 @@ if(BUILD_EXAMPLES)
     set_property(DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT commandline_test)
 endif()
 
+install(TARGETS commandline)
